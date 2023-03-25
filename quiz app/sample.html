@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../quiz app/sample.js"></script>
+    <style>
+    #q2,#q3,#q4,#q5,#reload,#ending{
+        visibility:hidden;
+    }
+    #q1,#q2,#q3,#q4,#q5{
+      font-size: 25px;
+      border:2px solid lightseagreen;
+      margin-top:100px;
+      margin-left: 300px;
+      margin-right: 300px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 50px;
+      padding-right: 50px;
+      background-color: rgb(214, 227, 236);
+      border-radius: 20px;
+    }
+    button{
+      background-color: rgb(3, 131, 131);
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-left: 350px;
+      font-size: 20px;
+      color:white;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      border-radius: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    #h11{
+      font-size: 50px;
+      margin-left: 700px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color:rgb(7, 123, 123)
+    }
+    h5{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-left: 550px;
+      font-size: 30px;
+      color:rgb(118, 167, 149);
+    }
+    #ending{
+      font-size: 25px;
+      border:2px solid lightseagreen;
+      margin-top:100px;
+      margin-left: 300px;
+      margin-right: 300px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 50px;
+      padding-right: 50px;
+      background-color: rgb(214, 227, 236);
+      border-radius: 20px;
+    }
+    #score{
+      font-size: 30px;
+    }
+    
+
+</style>
+</head>
+<body>
+   <div id="starting">
+      <h1 id="h11">Quiz</h1>
+      <h5>Answer the following Questions</h5>
+   </div>   
+    <div id="q1">
+    <b>1.Javascript is an _______ language?</b><br>
+    <input type="radio" name="prime">
+    <label>Object-Oriented</label><br>
+     <input type="radio" name="prime">
+    <label>Object-based</label><br>
+ <input type="radio" name="prime">
+    <label>Procedural</label><br>
+ <input type="radio" name="prime">
+    <label>None of the Above</label><br>
+<button type="submit" onclick="res('prime')">Next</button></form>
+</div>
+<div id="q2">
+    <b>2.Which of the following keywords is used to define a variable in Javascript?</b><br>
+    <input type="radio" name="prim">
+    <label>var</label><br>
+     <input type="radio" name="prim">
+    <label>let</label><br>
+ <input type="radio"name="prim">
+    <label >Both A and B</label><br>
+ <input type="radio" name="prim">
+    <label>NOne of the Above</label><br>
+<button type="submit" onclick="res('prim')">Next</button></form>
+</div>
+<div id="q3">
+    <b>3.Which of the following methods is used to access HTML elements using Javascript?</b><br>
+    <input type="radio" name="pri">
+    <label>getElementById()</label><br>
+     <input type="radio" name="pri">
+    <label >getElementsByClassName()</label><br>
+ <input type="radio" name="pri">
+    <label>Both A and B</label><br>
+ <input type="radio" name="pri">
+    <label>None of the Above</label><br>
+<button type="submit" onclick="res('pri')">Next</button></form>
+</div>
+<div id="q4">
+    <b>4.What does the Javascript “debugger” statement do?</b><br>
+    <input type="radio" name="pr">
+    <label>It will debug all errors in the program at runtime</label><br>
+     <input type="radio" name="pr">
+    <label>It acts as a breakpoint in a program</label><br>
+ <input type="radio" name="pr">
+    <label>It will debug error in the current statement if any</label><br>
+ <input type="radio" name="pr">
+    <label>All of the Above</label><br>
+<button type="submit" onclick="res('pr')">Next</button></form>
+</div>
+<div id="q5">
+    <b>5.Which of the following is not a Javascript framework?</b><br>
+    <input type="radio" name="p">
+    <label>Node</label><br>
+     <input type="radio" name="p">
+    <label>Vue</label><br>
+ <input type="radio" name="p">
+    <label>React</label><br>
+ <input type="radio" name="p">
+    <label>Cassandra</label><br>
+<button type="submit" onclick="res('p')">Submit</button></form>
+</div>
+<div id="ending">
+<h1 id="score"></h1>
+<button id="reload" onclick="location.reload()">Reload</button>
+</div>
+</body>
+</html>
