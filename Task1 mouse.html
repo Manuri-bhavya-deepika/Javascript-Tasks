@@ -1,0 +1,35 @@
+<p id="paragraph">This is a paragraph.</p>
+<script>
+  const myParagraph = document.getElementById("paragraph");
+  
+  myParagraph.onmouseover = function() {
+    this.style.color = "red";
+  };
+  
+  myParagraph.onmouseout = function() {
+    this.style.color = "black";
+  };
+</script>
+<button id="my-button">Hover over me</button>
+
+<script>
+  const myButton = document.getElementById("my-button");
+  
+  myButton.onmouseover = function() {
+    this.innerHTML = "You are hovering over me";
+  };
+  
+  myButton.onmouseout = function() {
+    this.innerHTML = "Hover over me";
+  };
+</script>
+<input type="text" id="my-input" />
+<button onclick="document.getElementById('paragraph').innerHTML = document.getElementById('my-input').value;">Change Paragraph Text</button>
+
+<ul>
+  <li onmouseover="this.style.color = 'red'; this.style.fontWeight = 'bold';" onmouseout="this.style.color = 'black'; this.style.fontWeight = 'normal';">Item 1</li>
+  <li onmouseover="this.style.color = 'red'; this.style.fontWeight = 'bold';" onmouseout="this.style.color = 'black'; this.style.fontWeight = 'normal';">Item 2</li>
+  <li onmouseover="this.style.color = 'red'; this.style.fontWeight = 'bold';" onmouseout="this.style.color = 'black'; this.style.fontWeight = 'normal';">Item 3</li>
+</ul>
+
+
